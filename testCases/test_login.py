@@ -1,15 +1,15 @@
 # from selenium import webdriver
 from pageObjects.LoginPage import LoginPage
-from utilities.readProperties import ReadConfig
+# from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 # from utilities import XLUtils
 # import pytest
 import time
 
 class Test_001_Login:
-    baseUrl=ReadConfig.getApplicationUrl()
-    username=ReadConfig.getUserName()
-    password=ReadConfig.getUserPassword()
+    baseUrl="https://admin-demo.nopcommerce.com"#ReadConfig.getApplicationUrl()
+    username="admin@yourstore.com"#ReadConfig.getUserName()
+    password="admin"#ReadConfig.getUserPassword()
     # workbook=ReadConfig.getWorkbook()
     logger=LogGen.loggen()
 
